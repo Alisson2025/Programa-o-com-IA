@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jogo interativo sobre inteligência artificial, escolhas e futuro.">
+  <title>Você decide o futuro da IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="caixa-principal">
+    <div class="topo">
+      <span class="selo">EXPERIÊNCIA INTERATIVA</span>
+      <span class="contador" id="contador">MISSÃO 00/06</span>
+    </div>
+    <h1>Você decide o <span>futuro da IA</span></h1>
+
+    <section class="tela-inicial" id="telaInicial">
+      <div class="orbita"><div class="orbita-centro">IA</div></div>
+      <p>
+        Novembro de 2022 marcou o início de uma nova fase na relação entre pessoas e tecnologia.
+        As inteligências artificiais passaram a criar textos, imagens, músicas e respostas em poucos segundos.
+        Mas, junto com as oportunidades, surgiram dúvidas: como usar essas ferramentas com responsabilidade?
+        Quem deve verificar as informações? Como proteger nossos dados e evitar injustiças?
+        <br><br>
+        Você foi escolhido(a) para participar de um conselho que decidirá como a IA será utilizada no futuro.
+        A cada etapa, suas escolhas terão consequências. Pense, investigue e decida: o futuro também depende de você.
+      </p>
+      <button class="iniciar-btn" id="iniciarBtn">Iniciar missão <span>→</span></button>
+    </section>
+
+    <section class="area-jogo escondido" id="areaJogo">
+      <div class="barra-progresso"><div id="progresso"></div></div>
+      <div class="categoria" id="categoria">ÉTICA E RESPONSABILIDADE</div>
+      <h2 class="caixa-perguntas" id="pergunta"></h2>
+      <p class="contexto" id="contexto"></p>
+      <div class="caixa-alternativas" id="alternativas"></div>
+      <div class="feedback escondido" id="feedback"></div>
+      <button class="continuar-btn escondido" id="continuarBtn">Próxima decisão <span>→</span></button>
+    </section>
+
+    <section class="caixa-resultado escondido" id="resultado">
+      <div class="resultado-icone" id="resultadoIcone">✦</div>
+      <div class="categoria">RELATÓRIO DA MISSÃO</div>
+      <h2 id="tituloResultado">O futuro está em construção.</h2>
+      <p class="texto-resultado" id="textoResultado"></p>
+      <div class="pontuacao"><strong id="pontos">0</strong><span>de 6 decisões responsáveis</span></div>
+      <div class="recomendacao" id="recomendacao"></div>
+      <button class="novamente-btn" id="novamenteBtn">Jogar novamente ↻</button>
+    </section>
+    <footer><span>PROJETO DE TECNOLOGIA E CIDADANIA DIGITAL</span><span>DATA LAB · IA</span></footer>
+  </main>
+  <script type="module" src="js/aleatorio.js"></script>
+  <script type="module" src="js/perguntas.js"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
